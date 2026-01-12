@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<!-- Jumbotron -->
+<div class="relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
+	style="background-image: url('../static/images/green-2599290.jpg'); height: 700px">
+	<div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+		style="background-color: rgba(0, 0, 0, 0.6)">
+		<div class="flex h-full items-center justify-center">
+			<div class="text-white">
+				<h2 class="mb-4 text-4xl heading-main">SOILBUDDY</h2>
+				<h4 class="mb-6 text-xl ">Sowing the seeds of sustainability</h4>
+				<button type="button"
+					class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+					data-te-ripple-init data-te-ripple-color="light">
+					<a href="{{ url_for('crop_recommend') }}"> Predict Now</a>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- 3333333333333333333 -->
+<article class="rounded-xl mx-12 my-6 bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+	<div class="flex items-start sm:gap-8">
+		<div
+			class="flex flex-col items-center bg-white border border-green-100 rounded-lg shadow md:flex-row  hover:bg-green-100 dark:border-green-500 dark:bg-green-800 dark:hover:bg-green-700">
+
+			<img src="{{ url_for('static', filename='images/s2.jpg') }}" class="h-56 w-72 max-w-[24rem] w-auto rounded-lg" alt="" />
+		</div>
+		<a href="{{ url_for('crop_recommend') }}">
+			<div class="blog-info">
+
+				<h4>Crop</h4>
+
+				<p class="mt-2"> Research for the best crop that could be harvested in the soil on basis of soil properties and weather condtions of your region.</p>
+			</div>
+		</a>
+	</div>
+
+	</div>
+</article>
+<!-- 222222222222222222 -->
+<article class="rounded-xl mx-12 my-6 bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+	<div class="flex items-start sm:gap-8">
+		<div
+			class="flex flex-col items-center bg-white border border-green-100 rounded-lg shadow md:flex-row  hover:bg-green-100 dark:border-green-500 dark:bg-green-800 dark:hover:bg-green-700">
+
+			<img src="{{ url_for('static', filename='images/s3.jpg') }}" class="h-56 w-72 max-w-[24rem] w-auto rounded-lg" alt="" />
+		</div>
+		<a href="{{ url_for('fertilizer_recommendation') }}">
+			<div class="blog-info">
+
+				<h4>Fertilizer</h4>
+
+				<p class="mt-2">Recommendation about the necessary fertilizers and also get advice over deficiencies of your crop or soil . </p>
+			</div>
+		</a>
+	</div>
+
+	</div>
+</article>
+<!-- 111111111111111111111111111111 -->
+<article class="rounded-xl mx-12 my-6 bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+	<div class="flex items-start sm:gap-8">
+		<div
+			class="flex flex-col items-center bg-white border border-green-100 rounded-lg shadow md:flex-row  hover:bg-green-100 dark:border-green-500 dark:bg-green-800 dark:hover:bg-green-700">
+
+			<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="h-56 w-72 max-w-[24rem] w-auto rounded-lg" alt="">
+		</div>
+		<a href="{{ url_for('disease_prediction') }}">
+			<div class="blog-info">
+
+				<h4>Disease</h4>
+
+				<p class="mt-2">Know the diseases your crops are infected with and also gives you the ways to cure them.</p>
+			</div>
+		</a>
+	</div>
+
+	</div>
+</article>
+
+
+
+<!-- Creating custom grid and hover effect
+<section>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/s2.jpg" alt="">
+        <div class="overlay">
+           <h2>Hover effect 1</h2>
+           <a class="info" href="#">link here</a>
+        </div>
+    </div>
+</div> -->
+
+</html>
+
+{% endblock %}
